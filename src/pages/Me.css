@@ -1,0 +1,74 @@
+#MePage{
+    display: inline-flex;
+    width: 100%;
+    background-color: black;
+    color: beige; 
+    overflow: hidden;
+    word-break: break-word;
+}
+
+#name{
+    font-size: 5vw;
+    width: 25vw;
+}
+
+#side{
+    display: grid;
+    width: 50%;
+    margin: 5vw;
+    justify-content: center;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* align-items: ; */
+    /* justify-content: center; */
+    /* align-content: flex-end; */
+    margin: 5vw;
+}
+
+p{
+    word-break: break-word;
+    font-size: 1.8vw;
+}
+
+h1{
+    font-size: 2.2vw;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+div.details{
+    word-break: break-word;
+    font-size: 1.2vw;
+
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.opaque{
+    opacity: .6;
+    word-break: break-word;
+    font-size: 1.2vw;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: rgb(141, 141, 141);
+}
+
+#btn{
+    
+}
