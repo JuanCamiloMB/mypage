@@ -10,7 +10,7 @@ export default function App() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Me/>}/>
+                    <Route path="/mypage" element={<Me/>}/>
                     <Route path="*" element={<NoPage />} />
                 </Routes>
             </BrowserRouter>
