@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "JuanCamiloMB.github.io/mypage/precache-manifest.a67725dc575300aba7e95302bce2f6b6.js"
+  "/mypage/precache-manifest.5d6d1f14602348f604642ee27db9ff9d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("JuanCamiloMB.github.io/mypage/index.html", {
+workbox.routing.registerNavigationRoute("/mypage/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
