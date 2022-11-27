@@ -8,7 +8,7 @@ import "./index.css"
 export default function App() {
     return(
         <div id='RoutesRoot'>
-            <Router basename={process.env.PUBLIC_URL || ''}>
+            <Router>
                 <Routes>
                     <Route path="/" element={<Me/>}/>
                     <Route path="*" element={<NoPage />} />
