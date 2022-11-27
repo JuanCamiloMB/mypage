@@ -7,10 +7,10 @@ import "./index.css"
 
 export default function App() {
     return(
-        <div>
-            <BrowserRouter>
+        <div id='RoutesRoot'>
+            <BrowserRouter basename={process.env.PUBLIC_URL || ''}>
                 <Routes>
-                    <Route path="/mypage" element={<Me/>}/>
+                    <Route path="/" element={<Me/>}/>
                     <Route path="*" element={<NoPage />} />
                 </Routes>
             </BrowserRouter>

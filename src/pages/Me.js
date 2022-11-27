@@ -7,9 +7,9 @@ const Me = () => {
     const [show, setShow] = useState(false)
     return(
         <>
-            <div id="MePage" className='container-fluid row'>
-                <div id="side" className='col-md text-center fs-1'>
-                    <div id="name">Juan Camilo Manjarrés Baena</div>
+            <div id="MePage" className='container-fluid row my-5'>
+                <div id="side" className='col-md d-flex justify-content-center  display-1'>
+                    <div id="name" className='text-center mx-5 px-5'>Juan Camilo Manjarrés Baena</div>
                 </div>
                 <div id="about" className='col-md fs-4'>
                     <p>Fifth semester System Engineer student.</p>
@@ -34,16 +34,16 @@ const Me = () => {
                         </li>
                         <li className='my-5'>
                             <h2 className=''>Google Cloud certification</h2>
-                            <div className='fs-6'>2022</div>
+                            <div className='fs-6'>October 2022</div>
                             <div className='fs-6'>Google Cloud Foundations</div>
-                            <div>
+                            {/* <div>
                                 {
                                     show? <ShowButton icon={<AiFillCaretRight />} f={() => {setShow(!show)}} />: <ShowButton icon={<AiFillCaretDown />} f={() => {setShow(!show)}} />
                                 }
                                 {
-                                    show? <img id="certificate" className='' src={require("../assets/certificate.png")} alt="Google cloud certificate"/>:null
+                                    show? <img id="certificate" className='img-fluid' src={require("../assets/certificate.png")} alt="Google cloud certificate"/>:null
                                 }
-                            </div>
+                            </div> */}
                         </li>
                     </ul>
 
