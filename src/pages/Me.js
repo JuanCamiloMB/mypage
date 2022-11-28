@@ -79,8 +79,8 @@ const Me = () => {
                     <section className='row hidden'>
                         <h1>Get in touch</h1>
                         <ul>
-                            <li className='fs-5 my-3'><a href='mailto:juancamilo.manjarres@gmail.com'>Email</a></li>
-                            <li className='fs-5 my-3'><a href='https://www.linkedin.com/in/kmilomanjar/'>LinkedIn</a></li>
+                            <li className='fs-1 my-3'><a href='mailto:juancamilo.manjarres@gmail.com'>Email</a></li>
+                            <li className='fs-1 my-3'><a href='https://www.linkedin.com/in/kmilomanjar/'>LinkedIn</a></li>
                         </ul>
                     </section>
                 </div>
