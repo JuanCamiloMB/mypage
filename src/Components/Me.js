@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import './Me.css'
-import { AiFillCaretDown, AiFillCaretRight } from 'react-icons/ai'
+import React, {useEffect} from 'react';
+import './Styles/Me.css'
+/* import { AiFillCaretDown, AiFillCaretRight } from 'react-icons/ai' */
 
 const Me = () => {
     useEffect(() => {
