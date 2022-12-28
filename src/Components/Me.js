@@ -57,8 +57,8 @@ const Me = () => {
                         <h1>Education</h1>
                         <ul>
                             <li className='my-5'>
-                                <h2>Bachelor's Degree in System Engineer</h2>
-                                <div className='fs-6'>2022 (currently studying)</div>
+                                <h2>System Engineer student</h2>
+                                <div className='fs-6'>(currently studying)</div>
                                 <div className='fs-6'>Universidad de Medellín - Medellín</div>
                             </li>
                             <li className='my-5'>
