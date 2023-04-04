@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px){
+    :root{
+        background-color: rgb(26, 26, 26);
+        color: white;
+    }
+}

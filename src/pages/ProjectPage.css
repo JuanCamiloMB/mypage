@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px){
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-family: "Trirong", serif;
+        font-size: 3.4ex;
+        height: 7vh;
+    }
+
+    #about, .inicioTxt {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white
+    }
+
+    #ProjectContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 92%;
+        height: 100%;
+        animation: fadeIn 3s;
+    }
+    .ProjectTitle{
+        display: flex;
+        align-items: center;
+        font-family: "Trirong", serif;
+        font-size: 15vw;
+        width: fit-content;
+        height: 8vh;
+        letter-spacing: 2rem;
+        text-indent: 2rem;
+    }
+    .DiscoverTxt{
+        font-family: "Trirong", serif;
+        font-size: 4vw;
+        color: rgb(150, 150, 150)
+    }
+}
