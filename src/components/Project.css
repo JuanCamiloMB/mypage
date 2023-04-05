@@ -1,19 +1,61 @@
-@media screen and (max-width: 768px){
-    .Project{
+
+@media screen and (min-width: 1024px){
+    .container{
+        height: 100%;
+        width: 25%;
+        object-position: center;
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .container:hover{
+        width: 35%;
+    }
+
+    .container img{
+        width: 100%;
+        object-fit: cover;
+        /* overflow: hidden; */
+        aspect-ratio: 9/16;
         height: 100%;
     }
 
+    .ProjectTitle{
+        display: none;
+    }
+    .DiscoverTxt{
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px){
     .container{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
+        margin-bottom: 5vh;
     }
 
     img{
         width: 100%;
         height: auto;
+    }
+    .ProjectTitle{
+        display: flex;
+        align-items: center;
+        font-family: "Trirong", serif;
+        font-size: 15vw;
+        width: fit-content;
+        height: 8vh;
+        letter-spacing: 2rem;
+        text-indent: 2rem;
+    }
+    .DiscoverTxt{
+        display: inline;
+        font-family: "Trirong", serif;
+        font-size: 4vw;
+        color: rgb(150, 150, 150)
     }
 }

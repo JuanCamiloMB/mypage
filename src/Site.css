@@ -1,4 +1,31 @@
-@media screen and (max-width: 768px){
+@media screen and (min-width: 1024px){ 
+    html,body{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+    }
+
+    #root{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        animation: fadeIn 3s;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        width: 92%;
+        justify-content: space-between;
+        font-family: "Trirong", serif;
+        font-size: 3.4ex;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-width: 1023px){
     
     html,body{
         margin:0;
@@ -12,5 +39,15 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-family: "Trirong", serif;
+        font-size: 3.4ex;
+        height: 7vh;
     }
 }

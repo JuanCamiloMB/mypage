@@ -1,11 +1,10 @@
-import psychology from '../assets/psychology.jpg'
 import './Project.css'
 
-function Project(){
+function Project(props){
     return(
         <div className='container'>
-            <img src={psychology}/>
-            <div className='ProjectTitle'>PhD</div>
+            <img src={props.image}/>
+            <div className='ProjectTitle'>{props.title}</div>
             <div className='DiscoverTxt'>Discover</div>
         </div>
 
