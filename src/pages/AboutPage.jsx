@@ -1,18 +1,24 @@
 import logo from '../assets/mylogogrey.svg'
 import { Link } from 'react-router-dom'
 import './AboutPage.css'
-import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 function AboutPage(){
 
     return(
-        <div id='aboutScreen'>
+        <motion.div 
+            id='aboutScreen'
+            
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            >
             <div id='aboutNav'>
                 <Link to='/' id='backBtn'>Back</Link>
             </div>
             <div id='aboutContainer' className=''>
                 <div id='identity'>
-                    <img src={logo}/>
+                    <img id='Logo' src={logo}/>
                     <div id='name'>JuanK Manjarres Baena</div>
                     <div id='description'>Creative web dev</div>
                 </div>
@@ -37,7 +43,7 @@ function AboutPage(){
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
