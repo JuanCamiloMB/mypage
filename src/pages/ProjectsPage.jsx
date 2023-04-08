@@ -1,9 +1,8 @@
 import Project from "../components/Project"
 import './ProjectPage.css'
-import { Link } from 'react-router-dom'
 import psychology from '../assets/psychology.jpg'
-import Logo from '../assets/mylogogrey.svg'
 import { motion } from "framer-motion"
+import {Menu} from "../components/Menu"
 
 function ProjectPage(){
     return(
@@ -14,11 +13,7 @@ function ProjectPage(){
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             >
-            <div id="navbar">
-                <img id="inicioLogo" src={Logo}/>
-                <div id="inicioTxt">JuanK</div>
-                <Link to='/about' id="about">About</Link>
-            </div>
+            <Menu/>
             <div id="ProjectContainer">
                 <div id="ProjectGallery">
                     <Project image={psychology} title='PhD'/>

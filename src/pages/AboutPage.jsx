@@ -1,5 +1,4 @@
-import logo from '../assets/mylogogrey.svg'
-import { Link } from 'react-router-dom'
+import {Menu} from '../components/Menu'
 import './AboutPage.css'
 import { motion } from 'framer-motion'
 
@@ -13,18 +12,14 @@ function AboutPage(){
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             >
-            <div id='aboutNav'>
-                <Link to='/' id='backBtn'>Back</Link>
-            </div>
+            
+            <Menu/>
+
             <div id='aboutContainer' className=''>
-                <div id='identity'>
-                    <img id='Logo' src={logo}/>
-                    <div id='name'>JuanK Manjarres Baena</div>
-                    <div id='description'>Creative web dev</div>
-                </div>
                 <div id='me'>
-                    <p id='p1'>I'm a System Engineer student and freelancer.</p>
+                    <p id='p1'>I'm a Systems Engineer student and freelancer.</p>
                     <p id='p2'>My interest are Design, Development and Cyber security</p>
+
                     <div id='lists'>
                         <div className='mytext list-title'>Work Experience</div>
                         <ul>

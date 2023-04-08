@@ -1,9 +1,13 @@
 @media screen and (min-width: 1024px){ 
+    ::-webkit-scrollbar {
+        display: none;
+    }
     html,body{
         margin:0;
         padding:0;
         height:100%;
         width:100%;
+        scrollbar-width: none;
     }
 
     #root{
@@ -11,20 +15,50 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
+        font-family: "Trirong", serif;
     }
-    #navbar{
+
+    nav{
         display: flex;
         flex-direction: row;
         width: 92%;
-        justify-content: space-between;
-        font-family: "Trirong", serif;
-        font-size: 3.4ex;
         height: 7vh;
-        margin-top: 1vh;
+        margin: 1vh;
+        font-size: 1.5rem;
+        justify-content: space-between;
+    }
+
+    #inicioLogo > img{
+        height: 100%;
+    }
+
+    #aboutBtn{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    #inicioTxt{
+        display: none;
     }
 }
-
 @media screen and (max-width: 1023px){
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 92%;
+        height: 7vh;
+        margin: 1vh;
+        font-size: 5vw;
+        justify-content: space-between;
+    }
+
+    #aboutBtn{
+        color: white;
+        display: flex;
+        align-items: center;
+    }
     
     html,body{
         margin:0;
@@ -38,15 +72,6 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-    }
-
-    #navbar{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
         font-family: "Trirong", serif;
-        font-size: 3.4ex;
-        height: 7vh;
     }
 }

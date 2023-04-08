@@ -8,9 +8,14 @@
         height: 100%;
         overflow: hidden;
     }
+    
 
     #inicioLogo{
         height: 100%;
+    }
+
+    #inicioLogo:hover{
+        cursor: pointer;
     }
 
     #about{
@@ -43,6 +48,8 @@
 
 @media screen and (max-width: 1023px){
 
+
+
     #inicioLogo{
         display:none
     }
@@ -51,10 +58,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #navbar{
-        width: 92%;
     }
 
     #about, #inicioTxt {
