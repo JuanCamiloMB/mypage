@@ -1,10 +1,21 @@
 import "./Project.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Project(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Link to={"/" + props.title} className="container">
-      <img src={props.image} />
+      <motion.img
+        src={props.image}
+        layout
+        data-isOpen={isOpen}
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      />
       <div className="ProjectTitle">{props.title}</div>
       <div className="DiscoverTxt">Discover</div>
     </Link>

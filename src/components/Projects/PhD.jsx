@@ -2,7 +2,7 @@ import { ProjectMenu } from "../Menu";
 import screenshot from "../../assets/Screenshot1.png";
 import psycology from "../../assets/psychology.jpg";
 import "./PhD.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function PhD() {
   return (
@@ -12,13 +12,24 @@ function PhD() {
       animate={{ y: 0 }}
       exit={{ opacity: 0 }}
       transition={{
-        duration: 1,
-        ease: "easeOut",
-        delayChildren: 0.5,
+        duration: 0.5,
+        ease: "easeIn",
+        
       }}
     >
       <ProjectMenu />
-      <div id="PhD_title">PhD</div>
+      <motion.div
+      id="PhD_title"
+      initial={{y: 100 +'%', opacity: 0}}
+      animate={{y: 0, opacity: 1}}
+      exit={{opacity: 0}}
+      transition={{
+        duration: 1,
+        delay: 1
+      }}
+      >
+        PhD
+      </motion.div>
       <div id="PhD_content">
         <img src={psycology} />
 

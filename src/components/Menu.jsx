@@ -10,7 +10,7 @@ function ProjectMenu() {
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 1,
-        delay: 1
+        delay: 1.5
       }}
     >
       <Link to="/" id="inicioLogo">
