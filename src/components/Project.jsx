@@ -1,17 +1,23 @@
 import "./Project.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { easeOut, motion } from "framer-motion";
 
 function Project(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Link to={"/" + props.title} className="container">
+    <Link
+      to={"/" + props.title}
+      className="container"
+    >
       <motion.img
         src={props.image}
         layout
         data-isOpen={isOpen}
+        transition={{
+          ease: "easeOut",
+        }}
         onClick={() => {
           setIsOpen(true);
         }}
