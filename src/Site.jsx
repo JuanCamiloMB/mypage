@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import PhD from "./components/Projects/PhD";
 import { AnimatePresence } from "framer-motion";
+import Empty from "./components/Empty"
 
 function Site() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function Site() {
           <Route path="/" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/PhD" element={<PhD />} />
+          <Route path="*" element={<Empty/>}/>
         </Routes>
       </AnimatePresence>
     

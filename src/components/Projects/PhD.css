@@ -36,12 +36,53 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
-    #PhD_content > img{
-        object-fit: cover;
+    #PhD_Screenshot1{
+        /* object-fit: cover; */
         width: 100%;
         height: 100%;
+    }
+
+    #PhD_Screenshot2{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .backgroundImg{
+        display: none;
+    }
+
+    #PhD_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 92%;
+    }
+
+    #PhD_title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 4rem;
+        letter-spacing: 3vw;
+    }
+
+    .PhD_text{
+        display: flex; 
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #PhD_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #PhD_content > *{
+        margin-top: 2vh;
     }
 }

@@ -10,11 +10,14 @@ function ProjectMenu() {
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 1,
-        delay: 1.5
+        delay: 1.5,
       }}
     >
       <Link to="/" id="inicioLogo">
         <img src={logo} />
+      </Link>
+      <Link to="/" id="inicioTxt">
+        <div>JuanK</div>
       </Link>
     </motion.nav>
   );

@@ -52,6 +52,7 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 5vh;
+        text-decoration: none;
     }
 
     img{
@@ -67,6 +68,7 @@
         height: 8vh;
         letter-spacing: 2rem;
         text-indent: 2rem;
+        color: white;
     }
     .DiscoverTxt{
         display: inline;
