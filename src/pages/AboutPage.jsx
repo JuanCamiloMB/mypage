@@ -14,6 +14,7 @@ function AboutPage() {
 
       <div id="aboutContainer" className="">
         <div id="me">
+          <p>HELLO!!! I'm Juan Camilo Manjarres 😉</p>
           <p>
             I'm a Systems Engineer student and freelancer, passionate for
             challenges; also attracted by art and sports.
