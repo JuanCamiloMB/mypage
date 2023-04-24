@@ -1,6 +1,6 @@
 import "./Project.css";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { easeOut, motion } from "framer-motion";
 
 function Project(props) {
