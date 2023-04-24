@@ -23,7 +23,7 @@ function Project(props) {
         }}
       />
       <div className="ProjectTitle">{props.title}</div>
-      <div className="DiscoverTxt">Discover</div>
+      <div className="DiscoverTxt">View ↗</div>
     </Link>
   );
 }
