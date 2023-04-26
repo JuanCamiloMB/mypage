@@ -4,13 +4,12 @@ import { useLocation } from "react-router-dom";
 
 function Blob() {
   const location = useLocation();
-  if (location.pathname === '/PhD'){
-    document. getElementById('blob').style.display = 'none';
-  }else{
-    document. getElementById('blob').style.display = 'initial';
-  }
-
   useEffect(() => {
+    if (location.pathname === "/PhD") {
+      document.getElementById("blob").style.display = "none";
+    } else {
+      document.getElementById("blob").style.display = "initial";
+    }
     const blob = document.getElementById("blob");
 
     document.body.onpointermove = (event) => {
