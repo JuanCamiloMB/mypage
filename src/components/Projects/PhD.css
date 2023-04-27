@@ -6,52 +6,82 @@
         width: 92%;
     }
 
-    .backgroundImg{
-        z-index: -1;
-        position: fixed;
-        height: 100%;
+    #PhD_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
     }
 
-    .backgroundImg > img{
+    #PhD_panel{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        width: 20%;
+    }
+
+    .panel_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 100% 100% 100% 100%;
+        overflow: hidden;
+    }
+
+    .panel_image img{
+        object-fit: cover;
         height: 100%;
         width: 100%;
-        opacity: 0.5;
     }
 
-    #PhD_title{
-        font-size: 10rem;
-        letter-spacing: 2vw;
+    .panel_description{
+        display: flex;
+        justify-content: end;
+        font-size: 1rem;
+    }
+
+    .panel_by{
+        display: flex;
+        justify-content: end;
+        font-size: 1rem;
+    }
+    
+    #PhD_epic{
+        font-size: 3rem;
+        width: 50%;
     }
 
     #PhD_content{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50vh 50vh;
-        column-gap: 2vw;
-        row-gap: 25vh;
     }
 
     .PhD_text{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        width: 60%;
     }
 
     #PhD_Screenshot1{
-        /* object-fit: cover; */
-        width: 100%;
-        height: 100%;
+        aspect-ratio: 16/9;
+        width: 60%;
+        border-radius: 2rem;
     }
 
     #PhD_Screenshot2{
         height: 100%;
+        border-radius: 2rem;
     }
 }
 
 @media screen and (max-width: 1023px){
-    .backgroundImg{
+    #PhD_panel{
         display: none;
     }
 
@@ -62,26 +92,30 @@
         width: 92%;
     }
 
-    #PhD_title{
+    #PhD_epic{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 4rem;
-        letter-spacing: 3vw;
+        font-size: 3rem;
     }
 
     .PhD_text{
         display: flex; 
+        flex-direction: column;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
+    
     #PhD_content{
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-
+    #PhD_content ul{
+        list-style-type: none;
+    }
+    
     #PhD_content > *{
         margin-top: 2vh;
     }
