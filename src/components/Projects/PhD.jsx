@@ -1,20 +1,13 @@
 import { ProjectMenu } from "../Menu";
 import screenshot1 from "../../assets/Screenshot1.png";
 import screenshot2 from "../../assets/Screenshot2.png";
-import screenshot3 from "../../assets/Screenshot3.gif";
-import screenshot4 from "../../assets/Screenshot4.gif";
+import grabacion1 from "../../assets/grabacion1.gif"
+import grabacion2 from "../../assets/grabacion2.gif"
 import "./PhD.css";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import psychology from "../../assets/inkStyle1.jpg";
 
-function PhD(props) {
-  const data = useLocation();
-  const imgInfo = data;
-  useEffect(() => {
-    console.log(imgInfo);
-  });
+function PhD() {
   return (
     <>
       <motion.div id="PhD_page">
@@ -41,6 +34,8 @@ function PhD(props) {
             </ul>
           </div>
           <img id="PhD_Screenshot2" src={screenshot2} />
+          <img id="PhD_Grabacion1 " src={grabacion1}/>
+          <img id="PhD_Grabacion2 " src={grabacion2}/>
         </div>
       </motion.div>
     </>
