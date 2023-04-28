@@ -26,7 +26,7 @@ function PhD(props) {
               <div className="panel_image">
                 <img src={psychology} />
               </div>
-              <div className="panel_description">Personal web-site</div>
+              <div className="panel_description">Personal site</div>
               <div className="panel_by">Freelance</div>
             </div>
           </div>
@@ -41,8 +41,6 @@ function PhD(props) {
             </ul>
           </div>
           <img id="PhD_Screenshot2" src={screenshot2} />
-          <img id="PhD_Screenshot3" src={screenshot3} />
-          <img id="PhD_Screenshot4" src={screenshot4} />
         </div>
       </motion.div>
     </>
