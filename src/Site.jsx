@@ -16,11 +16,6 @@ function Site() {
   }
 
   useEffect(() => {
-    /* if (location.pathname === "/PhD") {
-      document.getElementById("blob").style.display = "none";
-    } else {
-      document.getElementById("blob").style.display = "initial";
-    } */
     const blob = document.getElementById("blob");
     
     blob.animate(
