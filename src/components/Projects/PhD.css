@@ -59,6 +59,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 10vh;
     }
 
     .PhD_text{
@@ -77,6 +78,14 @@
 
     #PhD_Screenshot2{
         height: 60vh;
+        border-radius: 2rem;
+    }
+
+    #PhD_Grabacion1{
+        border-radius: 2rem;
+    }
+
+    #PhD_Grabacion2{
         border-radius: 2rem;
     }
 }
@@ -120,6 +129,11 @@
     
     #PhD_content > *{
         margin-top: 2vh;
+    }
+
+    #PhD_Screenshot1{
+        width: 100%;
+        border-radius: 2rem;
     }
 
     #PhD_Screenshot2{
