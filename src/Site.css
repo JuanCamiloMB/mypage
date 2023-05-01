@@ -66,7 +66,7 @@
 
     #blob{
         background-color: white;
-        height: 55vh;
+        height: 50vh;
         aspect-ratio: 1;
         position: absolute;
         left: 50%;
@@ -87,7 +87,7 @@
         width: 100%;
         position: fixed;
         z-index: -1;
-        backdrop-filter: blur(200px);
+        backdrop-filter: blur(100px);
     }
 
 }

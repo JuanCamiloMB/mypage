@@ -32,7 +32,7 @@ function Site() {
       <div id="blob_screen" onMouseMove={handleMouseMove}>
       <div id="blob"></div>
       <div id="blur" ></div>
-        <AnimatePresence mode="wait">
+        <AnimatePresence initial={false} mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<ProjectPage />} />
             <Route path="/about" element={<AboutPage />} />

@@ -11,6 +11,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 60%;
+        height: 50vh;
     }
 
     #PhD_panel{
@@ -21,19 +22,18 @@
         height: 100%;
     }
 
-    .panel_image{
+    .represent_img{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        height: 100%;
-        border-radius: 100% 100% 100% 100%;
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
     }
 
-    .panel_image img{
+    .represent_img img{
         object-fit: cover;
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
     }
 
@@ -79,6 +79,14 @@
         height: 60vh;
         border-radius: 2rem;
     }
+
+    #PhD_Grabacion1{
+        width: 100%;
+    }
+    
+    #PhD_Grabacion2{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1023px){
@@ -98,6 +106,10 @@
         flex-direction: row;
         justify-content: center;
         font-size: 2.5rem;
+    }
+
+    .represent_img{
+        display:none;
     }
 
     .PhD_text{
