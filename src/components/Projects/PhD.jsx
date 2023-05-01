@@ -79,14 +79,14 @@ function PhD() {
               <div className="panel_by">Freelance</div>
             </motion.div>
           </div>
-          <motion.div
+          {!isMobile && <motion.div
             initial={represent_img_variants.initial}
             animate={represent_img_variants.animate}
             transition={represent_img_variants.transition}
             className="represent_img"
           >
             <motion.img style={{ scale: scroll_move }} src={psychology} />
-          </motion.div>
+          </motion.div>}
           <img id="PhD_Screenshot1" src={screenshot1} />
           <div className="PhD_text">
             Made possible by
