@@ -7,6 +7,7 @@ import "./PhD.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 import psychology from "../../assets/inkStyle1.jpg";
 import { useLocation } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 function PhD() {
   const location = useLocation();
@@ -15,14 +16,32 @@ function PhD() {
   const { scrollYProgress } = useScroll();
   const scroll_move = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
 
-  const initial = {
-    width: state.divWidth,
-    height: state.divHeight,
-    top: state.divPosition.top,
-    left: state.divPosition.left,
-  };
-
   const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
+
+  const represent_img_variants = isMobile
+    ? {
+        initial: {},
+        animate: {},
+        transition: {},
+      }
+    : {
+        initial: {
+          ...(state &&
+            state.divPosition && {
+              width: state.divWidth,
+              height: state.divHeight,
+              top: state.divPosition.top,
+              left: state.divPosition.left,
+            }),
+          y: "-50%",
+        },
+        animate: {
+          y: 0,
+          width: "100vw",
+          height: "50vh",
+        },
+        transition: { transition },
+      };
 
   return (
     <>
@@ -61,19 +80,9 @@ function PhD() {
             </motion.div>
           </div>
           <motion.div
-            initial={{
-              width: initial.width,
-              height: initial.height,
-              top: initial.top,
-              left: initial.left,
-              y: "-50%",
-            }}
-            animate={{
-              y: 0,
-              width: "100vw",
-              height: "50vh"
-            }}
-            transition={transition}
+            initial={represent_img_variants.initial}
+            animate={represent_img_variants.animate}
+            transition={represent_img_variants.transition}
             className="represent_img"
           >
             <motion.img style={{ scale: scroll_move }} src={psychology} />
