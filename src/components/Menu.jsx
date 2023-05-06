@@ -2,19 +2,6 @@ import logo from "../assets/mylogogrey.svg";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-function ProjectMenu() {
-  return (
-    <nav>
-      <Link to="/" id="inicioLogo">
-        <img src={logo} />
-      </Link>
-      <Link to="/" id="inicioTxt">
-        <div>JuanK</div>
-      </Link>
-    </nav>
-  );
-}
-
 function Menu() {
   const location = useLocation();
   const path = location.pathname;
@@ -41,4 +28,4 @@ function Menu() {
   );
 }
 
-export { ProjectMenu, Menu };
+export default Menu;

@@ -1,18 +1,17 @@
-import { Menu } from "../components/Menu";
+import Menu from "../components/Menu";
 import "./AboutPage.css";
 import { motion } from "framer-motion";
 
 function AboutPage() {
   return (
     <>
+      <Menu />
       <motion.div
         id="aboutScreen"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Menu />
-
         <div id="aboutContainer" className="">
           <div id="me">
             <p>HELLO!!! I'm Juan Camilo Manjarres 😉</p>

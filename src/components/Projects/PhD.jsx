@@ -1,4 +1,4 @@
-import { ProjectMenu } from "../Menu";
+import Menu from "../Menu";
 import screenshot1 from "../../assets/Screenshot1.png";
 import screenshot2 from "../../assets/Screenshot2.png";
 import grabacion1 from "../../assets/grabacion1.gif";
@@ -46,7 +46,7 @@ function PhD() {
   return (
     <>
       <div id="PhD_page">
-        <ProjectMenu />
+        <Menu />
         <div id="PhD_content">
           <div id="PhD_info">
             <motion.div
@@ -87,8 +87,8 @@ function PhD() {
           >
             <motion.img style={{ scale: scroll_move }} src={psychology} />
           </motion.div>}
-          <img id="PhD_Screenshot1" src={screenshot1} />
-          <div className="PhD_text">
+          <img id="PhD_Screenshot1" className="with-gap" src={screenshot1} />
+          <div className="PhD_text with-gap">
             Made possible by
             <ul>
               <li>Tailwind</li>
@@ -97,9 +97,9 @@ function PhD() {
               <li>Responsive</li>
             </ul>
           </div>
-          <img id="PhD_Screenshot2" src={screenshot2} />
-          <img id="PhD_Grabacion1" src={grabacion1} />
-          <img id="PhD_Grabacion2" src={grabacion2} />
+          <img id="PhD_Screenshot2"  className="with-gap" src={screenshot2} />
+          <img id="PhD_Grabacion1" className="with-gap" src={grabacion1} />
+          <img id="PhD_Grabacion2" className="with-gap" src={grabacion2} />
         </div>
       </div>
     </>
