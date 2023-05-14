@@ -1,3 +1,7 @@
+import github from "../assets/github.png"
+import gmail from "../assets/gmail.png"
+import instagram from "../assets/instagram.png"
+import linkedin from "../assets/linkedin.png"
 import Menu from "../components/Menu";
 import "./AboutPage.css";
 import { motion } from "framer-motion";
@@ -48,6 +52,20 @@ function AboutPage() {
                 </li>
               </ul>
             </div>
+          </div>
+          <div id="social_media">
+            <a href="https://www.instagram.com/manjarresjuancamilo.is/" target="_blank" id="instagram">
+              <img src={instagram}/>
+            </a>
+            <a href="mailto:bussiness@jcmb.anonaddy.com" target="_blank" id="email">
+              <img src={gmail}/>
+            </a>
+            <a href="https://github.com/JuanCamiloMB" target="_blank" id="github">
+              <img src={github}/>
+            </a>
+            <a href="https://www.linkedin.com/in/kmilomanjar/" target="_blank" id="linkedin">
+              <img src={linkedin}/>
+            </a>
           </div>
         </div>
       </motion.div>
